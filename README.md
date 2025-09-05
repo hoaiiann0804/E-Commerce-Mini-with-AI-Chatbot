@@ -109,9 +109,8 @@ Dưới đây là các giao diện chính của Website Bán Hàng Mini:
   ![Admin Dashboard quản lý gói bảo hành](screenshots/admin_warranty.png)
 
   - **Chatbot AI**: Tương tác với Gemini AI.  
-  ![Chatbot AI](screenshots/chatbot.png)
-  ![chatbox AI](screenshots/chatbot2.png)
-
+    ![Chatbot AI](screenshots/chatbot.png)
+    ![chatbox AI](screenshots/chatbot2.png)
 
 Trang chủ: Hiển thị danh sách sản phẩm và thanh tìm kiếm.
 Chi tiết sản phẩm: Thông tin sản phẩm, variants, và đánh giá.
