@@ -1,0 +1,587 @@
+/* Modern Chat Widget Animations */
+
+@keyframes slideInFromBottom {
+  from {
+    opacity: 0;
+    transform: translateY(30px) scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes pulse {
+  0%,
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0.7;
+    transform: scale(1.05);
+  }
+}
+
+@keyframes bounce {
+  0%,
+  20%,
+  53%,
+  80%,
+  100% {
+    animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+    transform: translate3d(0, 0, 0);
+  }
+  40%,
+  43% {
+    animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
+    transform: translate3d(0, -30px, 0);
+  }
+  70% {
+    animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
+    transform: translate3d(0, -15px, 0);
+  }
+  90% {
+    transform: translate3d(0, -4px, 0);
+  }
+}
+
+@keyframes shimmer {
+  0% {
+    background-position: -200px 0;
+  }
+  100% {
+    background-position: calc(200px + 100%) 0;
+  }
+}
+
+@keyframes float {
+  0%,
+  100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+@keyframes glow {
+  0%,
+  100% {
+    box-shadow: 0 0 5px rgba(59, 130, 246, 0.5);
+  }
+  50% {
+    box-shadow:
+      0 0 20px rgba(59, 130, 246, 0.8),
+      0 0 30px rgba(59, 130, 246, 0.6);
+  }
+}
+
+.animate-in {
+  animation: slideInFromBottom 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.slide-in-from-bottom-4 {
+  animation: slideInFromBottom 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.slide-in-from-bottom-2 {
+  animation: slideInFromBottom 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.animation-delay-75 {
+  animation-delay: 75ms;
+}
+
+.animation-delay-150 {
+  animation-delay: 150ms;
+}
+
+/* Chat bubble hover effects */
+.chat-bubble {
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.chat-bubble:hover {
+  transform: translateY(-2px) scale(1.02);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+/* Enhanced button hover effects */
+.chat-button {
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.chat-button:hover {
+  transform: translateY(-1px) scale(1.05);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.chat-button:active {
+  transform: translateY(0) scale(0.98);
+}
+
+/* Typing indicator - Đã loại bỏ để tránh hiển thị 2 lần */
+@keyframes typing {
+  0%,
+  80%,
+  100% {
+    transform: scale(0.8);
+    opacity: 0.5;
+  }
+  40% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+/* Hiệu ứng nổi cho tin nhắn mới */
+@keyframes messageAppear {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.chat-messages > div:last-child {
+  animation: messageAppear 0.3s ease-out forwards;
+}
+
+/* Glassmorphism effect */
+.glass-effect {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+/* Gradient text */
+.gradient-text {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* Smooth scrollbar */
+.chat-messages::-webkit-scrollbar {
+  width: 6px;
+}
+
+.chat-messages::-webkit-scrollbar-track {
+  background: transparent;
+  border-radius: 3px;
+}
+
+.chat-messages::-webkit-scrollbar-thumb {
+  background: linear-gradient(
+    180deg,
+    rgba(59, 130, 246, 0.3),
+    rgba(59, 130, 246, 0.5)
+  );
+  border-radius: 3px;
+  transition: all 0.2s ease;
+}
+
+.chat-messages::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(
+    180deg,
+    rgba(59, 130, 246, 0.5),
+    rgba(59, 130, 246, 0.7)
+  );
+  transform: scaleX(1.2);
+}
+
+/* Dark mode scrollbar */
+.dark .chat-messages::-webkit-scrollbar-thumb {
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0.2),
+    rgba(255, 255, 255, 0.3)
+  );
+}
+
+.dark .chat-messages::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0.3),
+    rgba(255, 255, 255, 0.4)
+  );
+}
+
+/* Mobile responsive improvements */
+@media (max-width: 640px) {
+  .chat-messages {
+    padding: 1rem;
+  }
+
+  .chat-messages::-webkit-scrollbar {
+    width: 3px;
+  }
+}
+
+/* Focus states for accessibility */
+.chat-input:focus {
+  outline: none;
+  ring: 4px;
+  ring-color: rgba(59, 130, 246, 0.2);
+  border-color: rgb(59, 130, 246);
+}
+
+/* Loading shimmer effect */
+.shimmer {
+  background: linear-gradient(90deg, #f0f0f0 25%, #e0e0e0 50%, #f0f0f0 75%);
+  background-size: 200% 100%;
+  animation: shimmer 1.5s infinite;
+}
+
+.dark .shimmer {
+  background: linear-gradient(90deg, #374151 25%, #4b5563 50%, #374151 75%);
+  background-size: 200% 100%;
+}
+
+/* Chat widget expand/minimize animations */
+@keyframes expandChat {
+  from {
+    transform: scale(0.95);
+    opacity: 0.8;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+@keyframes minimizeChat {
+  from {
+    transform: scale(1);
+    opacity: 1;
+  }
+  to {
+    transform: scale(0.95);
+    opacity: 0.8;
+  }
+}
+
+.chat-widget-expanded {
+  animation: expandChat 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.chat-widget-minimized {
+  animation: minimizeChat 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+/* Enhanced button hover effects for expand/minimize */
+.expand-button {
+  transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.expand-button:hover {
+  transform: scale(1.1);
+  background: rgba(255, 255, 255, 0.35);
+}
+
+.expand-button:active {
+  transform: scale(0.95);
+}
+
+/* Backdrop blur for expanded mode */
+.chat-expanded-backdrop {
+  backdrop-filter: blur(2px);
+  background: rgba(0, 0, 0, 0.1);
+}
+
+/* Enhanced shadow for expanded mode */
+.chat-widget-expanded-shadow {
+  box-shadow:
+    0 25px 50px -12px rgba(0, 0, 0, 0.25),
+    0 0 0 1px rgba(255, 255, 255, 0.1);
+}
+
+/* Resize handles */
+.resize-handle {
+  position: absolute;
+  z-index: 10;
+  transition: all 0.2s ease;
+}
+
+.resize-handle:hover {
+  background-color: rgba(59, 130, 246, 0.2);
+}
+
+/* Resize cursors */
+.resize-nw {
+  cursor: nw-resize;
+}
+.resize-ne {
+  cursor: ne-resize;
+}
+.resize-sw {
+  cursor: sw-resize;
+}
+.resize-se {
+  cursor: se-resize;
+}
+.resize-n {
+  cursor: n-resize;
+}
+.resize-s {
+  cursor: s-resize;
+}
+.resize-e {
+  cursor: e-resize;
+}
+.resize-w {
+  cursor: w-resize;
+}
+
+/* Resize indicator dots */
+.resize-dots {
+  position: absolute;
+  bottom: 2px;
+  right: 2px;
+  width: 8px;
+  height: 8px;
+  background: linear-gradient(
+    45deg,
+    transparent 30%,
+    rgba(59, 130, 246, 0.6) 30%,
+    rgba(59, 130, 246, 0.6) 35%,
+    transparent 35%,
+    transparent 65%,
+    rgba(59, 130, 246, 0.6) 65%,
+    rgba(59, 130, 246, 0.6) 70%,
+    transparent 70%
+  );
+  background-size: 3px 3px;
+}
+
+/* Resizing state */
+.chat-widget-resizing {
+  user-select: none;
+  pointer-events: none;
+}
+
+.chat-widget-resizing * {
+  pointer-events: none;
+}
+
+/* Smooth resize transition */
+.chat-widget-resize-transition {
+  transition:
+    width 0.2s cubic-bezier(0.4, 0, 0.2, 1),
+    height 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+  will-change: width, height;
+}
+
+/* Enhanced resize performance */
+.chat-widget-resizing {
+  will-change: width, height;
+  transform: translateZ(0);
+  backface-visibility: hidden;
+  perspective: 1000px;
+}
+
+/* Global resize state */
+.resize-in-progress {
+  cursor: grabbing !important;
+}
+
+.resize-in-progress::after {
+  content: '';
+  position: fixed;
+  inset: 0;
+  z-index: 9999;
+  pointer-events: none;
+}
+
+/* Resize feedback animation */
+@keyframes resizePulse {
+  0% {
+    transform: scale(1);
+    opacity: 0.7;
+  }
+  50% {
+    transform: scale(1.05);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 0.7;
+  }
+}
+
+.resize-feedback {
+  animation: resizePulse 0.3s ease-in-out;
+}
+
+/* Resize handle glow effect */
+.resize-handle-glow {
+  box-shadow: 0 0 8px rgba(59, 130, 246, 0.6);
+  background-color: rgba(59, 130, 246, 0.3);
+}
+
+/* React-Rnd Styles - Dragging disabled */
+.react-draggable {
+  will-change: transform;
+}
+
+.react-resizable {
+  will-change: width, height;
+  transform: translateZ(0);
+  backface-visibility: hidden;
+  perspective: 1000px;
+}
+
+.react-resizable-resizing {
+  z-index: 100;
+  box-shadow:
+    0 20px 60px rgba(0, 0, 0, 0.2),
+    0 0 0 1px rgba(59, 130, 246, 0.1) !important;
+  transition: none !important;
+}
+
+/* Chat header - no longer a drag handle */
+.chat-header {
+  cursor: default;
+}
+
+/* Enhanced resize handle styles for react-rnd */
+.react-resizable-handle {
+  opacity: 0.5;
+  transition:
+    opacity 0.2s ease,
+    background-color 0.2s ease;
+  z-index: 10;
+}
+
+.react-resizable-handle:hover {
+  opacity: 1;
+  background-color: rgba(59, 130, 246, 0.2) !important;
+}
+
+/* Make resize handles more visible and easier to grab */
+.react-resizable-handle-se,
+.react-resizable-handle-sw,
+.react-resizable-handle-ne,
+.react-resizable-handle-nw {
+  width: 20px !important;
+  height: 20px !important;
+  background-color: rgba(59, 130, 246, 0.1);
+  border-radius: 50%;
+}
+
+.react-resizable-handle-se:hover,
+.react-resizable-handle-sw:hover,
+.react-resizable-handle-ne:hover,
+.react-resizable-handle-nw:hover {
+  background-color: rgba(59, 130, 246, 0.3) !important;
+}
+
+.react-resizable-handle-se {
+  background-image: url('data:image/svg+xml;charset=utf-8,%3Csvg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="%233B82F6"%3E%3Cpath d="M11 9.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm-5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm-5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3z"/%3E%3C/svg%3E') !important;
+  background-position: center !important;
+  background-repeat: no-repeat !important;
+  background-origin: content-box !important;
+  box-sizing: border-box !important;
+  cursor: se-resize !important;
+}
+
+/* Add resize indicator tooltip */
+.resize-indicator {
+  position: absolute;
+  bottom: 8px;
+  right: 8px;
+  font-size: 10px;
+  color: rgba(59, 130, 246, 0.7);
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 2px 6px;
+  border-radius: 4px;
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.react-resizable:hover .resize-indicator {
+  opacity: 1;
+}
+
+/* Active chat widget - prevent auto-closing */
+.chat-widget-active {
+  z-index: 9999;
+  pointer-events: auto;
+}
+
+/* Body class when chat widget is open */
+.chat-widget-open {
+  /* Ngăn chặn các sự kiện click bên ngoài ảnh hưởng đến chatbot */
+  overflow-x: hidden; /* Ngăn chặn scroll ngang */
+  position: relative; /* Đảm bảo các sự kiện click được xử lý đúng */
+}
+
+/* Thêm một lớp bảo vệ khác để ngăn chặn các sự kiện click bên ngoài */
+.chat-widget-open::after {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 30; /* Thấp hơn z-index của chatbot nhưng cao hơn các phần tử khác */
+  pointer-events: none; /* Không bắt các sự kiện click để tránh xung đột */
+}
+
+/* Ngăn chặn các sự kiện click bên ngoài chatbot */
+.chat-widget-active {
+  z-index: 9999 !important;
+  pointer-events: auto !important;
+  position: relative !important;
+  /* Thêm hiệu ứng shadow mới */
+  box-shadow:
+    0 10px 25px -5px rgba(0, 0, 0, 0.1),
+    0 10px 10px -5px rgba(0, 0, 0, 0.04),
+    0 0 0 1px rgba(255, 255, 255, 0.1) !important;
+  /* Thêm hiệu ứng border glow */
+  animation: borderGlow 4s ease-in-out infinite alternate;
+}
+
+/* Hiệu ứng border glow */
+@keyframes borderGlow {
+  0% {
+    border-color: rgba(255, 255, 255, 0.1);
+  }
+  100% {
+    border-color: rgba(59, 130, 246, 0.3);
+  }
+}
+
+/* Ngăn chặn các sự kiện click bên ngoài chatbot */
+.chat-widget-active * {
+  pointer-events: auto !important;
+}
+
+/* Hiệu ứng hover cho các nút gợi ý */
+button.text-xs.bg-white\/20:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Hiệu ứng hover cho sản phẩm */
+.chat-messages .group:hover {
+  transform: translateY(-3px);
+  transition: all 0.3s ease;
+}

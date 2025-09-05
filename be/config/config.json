@@ -1,0 +1,28 @@
+
+{
+  "development": {
+    "username": "postgres",
+    "password": "123456",
+    "database": "websitebanhangmini",
+    "host": "localhost",
+    "port": 5432,
+    "dialect": "postgres",
+    "logging": false
+  },
+  "test": {
+    "username": "postgres",
+    "password": "123456",
+    "database": "websitebanhangmini_test",
+    "host": "localhost",
+    "port": 5432,
+    "dialect": "postgres"
+  },
+  "production": {
+    "username": "postgres",
+    "password": "123456",
+    "database": "websitebanhangmini_production",
+    "host": "localhost",
+    "port": 5432,
+    "dialect": "postgres"
+  }
+}

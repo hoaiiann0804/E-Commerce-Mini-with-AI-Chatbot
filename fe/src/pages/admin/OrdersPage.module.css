@@ -1,0 +1,275 @@
+/* OrdersPage Custom Styles */
+
+.ordersPage {
+  padding: 24px;
+  background-color: #f5f5f5;
+}
+
+.pageHeader {
+  margin-bottom: 24px;
+}
+
+.pageTitle {
+  margin: 0 !important;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.filterCard {
+  margin-bottom: 24px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+}
+
+.tableCard {
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+}
+
+.statusTag {
+  border-radius: 16px !important;
+  font-weight: 500;
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.customerInfo {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.customerName {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-weight: 600;
+}
+
+.customerEmail {
+  font-size: 12px;
+  color: #666;
+}
+
+.dateInfo {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.totalAmount {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.totalAmountText {
+  font-weight: 600;
+  color: #1890ff;
+}
+
+.actionButtons {
+  display: flex;
+  gap: 8px;
+}
+
+.modalHeader {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.orderSummary {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.summaryRow {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.summaryRowDiscount {
+  color: #52c41a;
+}
+
+.summaryTotal {
+  font-weight: 600;
+  font-size: 16px;
+  padding-top: 8px;
+  border-top: 1px solid #f0f0f0;
+}
+
+.summaryTotalAmount {
+  font-weight: 600;
+  font-size: 16px;
+  color: #1890ff;
+}
+
+.paginationContainer {
+  margin-top: 16px;
+  text-align: center;
+  padding: 16px 0;
+  border-top: 1px solid #f0f0f0;
+}
+
+.loadingContainer {
+  text-align: center;
+  padding: 50px;
+}
+
+.loadingText {
+  margin-top: 16px;
+}
+
+.errorAlert {
+  margin: 20px;
+}
+
+.orderDetailsModal .ant-modal-body {
+  max-height: 70vh;
+  overflow-y: auto;
+}
+
+.orderItemsList .ant-list-item {
+  padding: 16px;
+  border-radius: 8px;
+  margin-bottom: 8px;
+  background: #fafafa;
+}
+
+.orderItemImage {
+  border-radius: 8px;
+}
+
+.itemTotalPrice {
+  text-align: right;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .ordersPage {
+    padding: 16px;
+  }
+
+  .pageTitle {
+    font-size: 20px;
+  }
+
+  .filterCard .ant-row {
+    flex-direction: column;
+  }
+
+  .filterCard .ant-col {
+    margin-bottom: 16px;
+  }
+
+  .tableCard .ant-table-wrapper {
+    overflow-x: auto;
+  }
+}
+
+@media (max-width: 576px) {
+  .ordersPage {
+    padding: 12px;
+  }
+
+  .modalHeader {
+    font-size: 16px;
+  }
+
+  .orderDetailsModal {
+    margin: 0;
+    max-width: 100vw;
+  }
+}
+
+/* Dark mode support */
+.dark .ordersPage,
+[data-theme='dark'] .ordersPage {
+  background-color: #111827;
+}
+
+.dark .filterCard,
+.dark .tableCard,
+[data-theme='dark'] .filterCard,
+[data-theme='dark'] .tableCard {
+  background-color: #1f2937;
+  border-color: #374151;
+}
+
+.dark .customerEmail,
+[data-theme='dark'] .customerEmail {
+  color: #9ca3af;
+}
+
+.dark .summaryTotal,
+[data-theme='dark'] .summaryTotal {
+  border-top-color: #374151;
+}
+
+.dark .paginationContainer,
+[data-theme='dark'] .paginationContainer {
+  border-top-color: #374151;
+}
+
+.dark .orderItemsList .ant-list-item,
+[data-theme='dark'] .orderItemsList .ant-list-item {
+  background: #111827;
+}
+
+.dark .orderDetailsModal .ant-modal-body::-webkit-scrollbar-track,
+[data-theme='dark']
+  .orderDetailsModal
+  .ant-modal-body::-webkit-scrollbar-track {
+  background: #1f2937;
+}
+
+.dark .orderDetailsModal .ant-modal-body::-webkit-scrollbar-thumb,
+[data-theme='dark']
+  .orderDetailsModal
+  .ant-modal-body::-webkit-scrollbar-thumb {
+  background: #4b5563;
+}
+
+.dark .orderDetailsModal .ant-modal-body::-webkit-scrollbar-thumb:hover,
+[data-theme='dark']
+  .orderDetailsModal
+  .ant-modal-body::-webkit-scrollbar-thumb:hover {
+  background: #6b7280;
+}
+
+/* Animation for status changes */
+.statusTag {
+  transition: all 0.3s ease;
+}
+
+.statusTag:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Custom scrollbar for modal */
+.orderDetailsModal .ant-modal-body::-webkit-scrollbar {
+  width: 6px;
+}
+
+.orderDetailsModal .ant-modal-body::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 3px;
+}
+
+.orderDetailsModal .ant-modal-body::-webkit-scrollbar-thumb {
+  background: #c1c1c1;
+  border-radius: 3px;
+}
+
+.orderDetailsModal .ant-modal-body::-webkit-scrollbar-thumb:hover {
+  background: #a8a8a8;
+}

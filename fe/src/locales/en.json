@@ -1,0 +1,670 @@
+{
+  "header": {
+    "brand": "ShopMini",
+    "navigation": {
+      "home": "Home",
+      "shop": "Shop",
+      "categories": "Categories",
+      "deals": "Deals",
+      "about": "About",
+      "newArrivals": "New Arrivals",
+      "bestSellers": "Best Sellers",
+      "contact": "Contact"
+    },
+    "actions": {
+      "search": "Search",
+      "searchPlaceholder": "Search products...",
+      "userAccount": "User account",
+      "shoppingCart": "Shopping cart",
+      "openMenu": "Open menu",
+      "closeMenu": "Close menu",
+      "toggleTheme": "Toggle theme",
+      "changeLanguage": "Change language"
+    },
+    "language": {
+      "vietnamese": "Tiếng Việt",
+      "english": "English",
+      "current": "en"
+    },
+    "dropdown": {
+      "profile": "Profile",
+      "orders": "Orders",
+      "wishlist": "Wishlist",
+      "adminPanel": "Admin Panel",
+      "logout": "Logout"
+    }
+  },
+  "homepage": {
+    "hero": {
+      "title": "Discover Amazing Products for Your Lifestyle",
+      "subtitle": "Shop the latest trends and innovations with unbeatable prices and quality.",
+      "shopNow": "Shop Now",
+      "browseCategories": "Browse Categories",
+      "imageAlt": "Modern shopping mall with people",
+      "slides": {
+        "shopping": {
+          "title": "Discover the shopping world",
+          "subtitle": "Thousands of high-quality products at the best prices",
+          "badge": "🔥 Trend 2024"
+        },
+        "fashion": {
+          "title": "Modern fashion",
+          "subtitle": "Latest collections from top brands",
+          "badge": "✨ New collection"
+        },
+        "technology": {
+          "title": "Advanced technology",
+          "subtitle": "The latest and most modern technology products",
+          "badge": "🚀 New technology"
+        }
+      },
+      "buttons": {
+        "shopNow": "Shop now",
+        "browseCategories": "Browse categories"
+      },
+      "features": {
+        "fastDelivery": {
+          "title": "Fast delivery",
+          "subtitle": "Within 24h"
+        },
+        "highQuality": {
+          "title": "High quality",
+          "subtitle": "100% guaranteed"
+        },
+        "warranty": {
+          "title": "Warranty",
+          "subtitle": "12 months"
+        }
+      },
+      "stats": {
+        "products": "Products",
+        "customers": "Customers",
+        "satisfaction": "Satisfaction",
+        "support": "Support"
+      },
+      "promotions": {
+        "discount": "-50%",
+        "freeShip": "Free ship"
+      }
+    },
+    "featuredProducts": {
+      "title": "Featured Products",
+      "viewAll": "View All"
+    },
+    "categories": {
+      "title": "Shop by Category",
+      "productsCount": "Products"
+    },
+    "promotion": {
+      "badge": "Limited Time Offer",
+      "title": "Get 20% Off on All New Arrivals",
+      "description": "Discover our latest collection and enjoy exclusive discounts on selected items. Use promo code",
+      "promoCode": "NEWSEASON",
+      "atCheckout": "at checkout.",
+      "shopNewArrivals": "Shop New Arrivals",
+      "imageAlt": "Special offer - Woman with shopping bags"
+    },
+    "newsletter": {
+      "title": "Subscribe to Our Newsletter",
+      "description": "Stay updated with our latest products, exclusive offers, and shopping tips.",
+      "emailPlaceholder": "Your email address",
+      "subscribe": "Subscribe",
+      "backgroundAlt": "Shopping pattern background"
+    }
+  },
+  "auth": {
+    "login": {
+      "title": "Welcome Back",
+      "subtitle": "Sign in to your account to continue",
+      "emailLabel": "Email Address",
+      "emailPlaceholder": "your.email@example.com",
+      "passwordLabel": "Password",
+      "passwordPlaceholder": "••••••••",
+      "forgotPassword": "Forgot password?",
+      "signInButton": "Sign In",
+      "noAccount": "Don't have an account?",
+      "signUpLink": "Sign up",
+      "validation": {
+        "emailRequired": "Email is required",
+        "emailInvalid": "Email is invalid",
+        "passwordRequired": "Password is required",
+        "passwordMinLength": "Password must be at least 6 characters"
+      },
+      "errors": {
+        "invalidCredentials": "Invalid email or password"
+      }
+    },
+    "register": {
+      "title": "Create an Account",
+      "subtitle": "Join us to start shopping",
+      "nameLabel": "Full Name",
+      "namePlaceholder": "John Doe",
+      "emailLabel": "Email Address",
+      "emailPlaceholder": "your.email@example.com",
+      "passwordLabel": "Password",
+      "passwordPlaceholder": "••••••••",
+      "confirmPasswordLabel": "Confirm Password",
+      "confirmPasswordPlaceholder": "••••••••",
+      "agreeToTerms": "I agree to the",
+      "termsOfService": "Terms of Service",
+      "and": "and",
+      "privacyPolicy": "Privacy Policy",
+      "createAccountButton": "Create Account",
+      "haveAccount": "Already have an account?",
+      "signInLink": "Sign in",
+      "validation": {
+        "nameRequired": "Name is required",
+        "emailRequired": "Email is required",
+        "emailInvalid": "Email is invalid",
+        "passwordRequired": "Password is required",
+        "passwordMinLength": "Password must be at least 6 characters",
+        "confirmPasswordRequired": "Please confirm your password",
+        "passwordsNotMatch": "Passwords do not match"
+      },
+      "errors": {
+        "registrationFailed": "Registration failed. Please try again."
+      }
+    },
+    "welcome": {
+      "title": "Welcome back!",
+      "message": "Hello {{name}}, you have successfully signed in."
+    },
+    "forgotPassword": {
+      "title": "Forgot Password",
+      "subtitle": "Enter your email and we'll send you a reset link",
+      "emailLabel": "Email Address",
+      "emailPlaceholder": "your.email@example.com",
+      "sendResetLinkButton": "Send Reset Link",
+      "backToLogin": "Back to login",
+      "successMessage": "Password reset link has been sent to your email",
+      "validation": {
+        "emailRequired": "Email is required",
+        "emailInvalid": "Email is invalid"
+      },
+      "errors": {
+        "emailNotFound": "No account found with this email",
+        "sendFailed": "Failed to send email. Please try again."
+      }
+    },
+    "resetPassword": {
+      "title": "Reset Password",
+      "subtitle": "Enter your new password",
+      "passwordLabel": "New Password",
+      "passwordPlaceholder": "••••••••",
+      "confirmPasswordLabel": "Confirm New Password",
+      "confirmPasswordPlaceholder": "••••••••",
+      "resetPasswordButton": "Reset Password",
+      "backToLogin": "Back to login",
+      "successMessage": "Password has been reset successfully",
+      "validation": {
+        "passwordRequired": "Password is required",
+        "passwordMinLength": "Password must be at least 6 characters",
+        "confirmPasswordRequired": "Please confirm your password",
+        "passwordsNotMatch": "Passwords do not match"
+      },
+      "errors": {
+        "invalidToken": "Reset link is invalid or expired",
+        "resetFailed": "Failed to reset password. Please try again."
+      }
+    }
+  },
+  "chat": {
+    "title": "AI Shopping Assistant",
+    "greeting": "Hello! I'm your AI shopping assistant. How can I help you today?",
+    "greetingWithName": "Hello {{name}}! I'm your AI shopping assistant. How can I help you today?",
+    "typing": "Typing...",
+    "placeholder": "Need any help?",
+    "typeSomething": "Type your question...",
+    "send": "Send",
+    "openChat": "Open chat",
+    "closeChat": "Close chat",
+    "close": "Close",
+    "expand": "Expand",
+    "minimize": "Minimize",
+    "suggestions": {
+      "findProducts": "Find new products",
+      "viewPromotions": "View promotions",
+      "howToOrder": "How to order",
+      "returnPolicy": "Return policy",
+      "tryAgain": "Try again",
+      "contactSupport": "Contact support"
+    },
+    "responses": {
+      "productSearch": "I found some products matching \"{{query}}\". You might be interested in:\n\n1. Unisex cotton t-shirt - $12.99\n2. Slim fit jeans - $24.99\n3. Sports sneakers - $34.99\n\nWhich product would you like to see details for?",
+      "orderHelp": "To place an order on our website, you can follow these steps:\n\n1. Choose the product you want to buy\n2. Add to cart\n3. Proceed to checkout\n4. Fill in shipping information\n5. Choose payment method\n6. Confirm order\n\nWhich step do you need more help with?",
+      "returnPolicy": "Our return policy:\n\n- Return period: within 7 days of receiving the item\n- Product must have original tags and be unused\n- Must have purchase receipt\n- Return shipping costs are paid by customer\n\nDo you need more information about our return policy?",
+      "general": "Thank you for contacting us. I'm an AI shopping assistant, I can help you with:\n\n- Product search\n- Order guidance\n- Return policy information\n- Answering frequently asked questions\n\nWhat can I help you with?"
+    },
+    "errors": {
+      "general": "Sorry, I encountered an issue processing your request. Please try again later.",
+      "timeout": "Request took too long. Using sample response.",
+      "notFound": "Cannot connect to AI service. Using sample response.",
+      "tooManyRequests": "Too many requests. Please try again in a few minutes.",
+      "serverError": "AI service is temporarily unavailable. Please try again later."
+    }
+  },
+  "common": {
+    "loading": "Loading...",
+    "error": "Error",
+    "success": "Success",
+    "cancel": "Cancel",
+    "confirm": "Confirm",
+    "save": "Save",
+    "edit": "Edit",
+    "delete": "Delete",
+    "add": "Add",
+    "view": "View",
+    "close": "Close",
+    "clear": "Clear",
+    "recentSearches": "Recent searches",
+    "noResults": "No results found",
+    "viewAllResults": "View all results",
+    "noRecentSearches": "No recent searches",
+    "errorOccurred": "An error occurred"
+  },
+  "unauthorized": {
+    "title": "Access Denied",
+    "message": "You don't have permission to access this page. Please login with the appropriate account or contact your administrator.",
+    "goHome": "Go Home",
+    "login": "Login"
+  },
+
+  "cart": {
+    "title": "Your Shopping Cart",
+    "emptyCart": {
+      "title": "Your cart is empty",
+      "message": "Looks like you haven't added any products to your cart yet.",
+      "startShopping": "Start Shopping"
+    },
+    "cartItems": "Cart Items",
+    "clearCart": "Clear cart",
+    "clearCartConfirm": "Are you sure you want to remove all items from your cart?",
+    "orderSummary": "Order Summary",
+    "subtotal": "Subtotal",
+    "shipping": "Shipping",
+    "free": "Free",
+    "tax": "Tax",
+    "total": "Total",
+    "proceedToCheckout": "Proceed to Checkout",
+    "continueShopping": "Continue Shopping",
+    "syncedWithAccount": "Cart is synced with your account",
+    "savedOnServer": "Cart is saved on server",
+    "savedLocally": "Cart is saved on your device",
+    "benefits": {
+      "freeShipping": "Free shipping on orders over $50",
+      "secureCheckout": "Secure checkout",
+      "returnPolicy": "30-day return policy"
+    },
+    "notifications": {
+      "cleared": "All items have been removed from your cart",
+      "serverError": "Could not clear cart on server. Local cart has been cleared.",
+      "loadError": "Could not load cart from server. Using local data."
+    }
+  },
+
+  "checkout": {
+    "title": "Checkout",
+    "emptyCart": {
+      "title": "Your cart is empty",
+      "message": "Add some items to your cart before proceeding to checkout.",
+      "continueShopping": "Continue Shopping",
+      "redirectMessage": "You have been redirected to the shop because your cart is empty."
+    },
+    "shippingInfo": {
+      "title": "Shipping Information",
+      "firstName": "First Name",
+      "lastName": "Last Name",
+      "email": "Email Address",
+      "phone": "Phone Number",
+      "address": "Address",
+      "city": "City",
+      "state": "State/Province",
+      "zipCode": "ZIP/Postal Code",
+      "country": "Country"
+    },
+    "countries": {
+      "US": "United States",
+      "CA": "Canada",
+      "UK": "United Kingdom",
+      "AU": "Australia",
+      "DE": "Germany",
+      "FR": "France",
+      "VN": "Vietnam"
+    },
+    "shippingMethod": {
+      "title": "Shipping Method",
+      "standard": "Standard shipping (3-5 business days)",
+      "express": "Express shipping (1-2 business days)",
+      "free": "Free shipping (5-7 business days)",
+      "freeLabel": "Free"
+    },
+    "paymentMethod": {
+      "title": "Payment Method",
+      "selectLabel": "Select Payment Method",
+      "creditCard": "Credit Card",
+      "paypal": "PayPal",
+      "bankTransfer": "Bank Transfer"
+    },
+    "creditCard": {
+      "cardNumber": "Card Number",
+      "cardNumberPlaceholder": "1234 5678 9012 3456",
+      "nameOnCard": "Name on Card",
+      "expiryDate": "Expiry Date",
+      "expiryPlaceholder": "MM/YY",
+      "cvc": "CVC",
+      "cvcPlaceholder": "123"
+    },
+    "paypal": {
+      "redirectMessage": "You will be redirected to PayPal to complete your payment.",
+      "createOrderFirst": "Please create your order before proceeding to PayPal payment.",
+      "completePayment": "Complete payment with PayPal",
+      "loading": "Loading PayPal...",
+      "loadError": "Could not load PayPal. Please try again later.",
+      "paymentError": "An error occurred while processing your PayPal payment. Please try again.",
+      "adBlockerDetected": "It seems an ad blocker is preventing PayPal from loading.",
+      "disableAdBlocker": "Please disable your ad blocker for this website.",
+      "allowPayPalDomain": "Or allow 'paypal.com' domain in your ad blocker settings.",
+      "refreshPage": "Then refresh the page and try again.",
+      "tryAgain": "Try Again",
+      "alternativeMethod": "Or use alternative method:",
+      "payWithPayPal": "Pay with PayPal",
+      "returnAfterPayment": "After payment, please return to this page to complete your order."
+    },
+    "bankTransfer": {
+      "title": "Bank Transfer",
+      "instructions": "Please use the following information to make a bank transfer:",
+      "scanQRCode": "Scan QR code to pay:",
+      "qrInstructions": "Use your banking app to scan the QR code",
+      "bankDetails": "Bank transfer details:",
+      "bankName": "Bank",
+      "accountName": "Account name",
+      "accountNumber": "Account number",
+      "amount": "Amount",
+      "reference": "Transfer reference",
+      "noteReference": "⚠️ Please enter the exact transfer reference for quick order processing",
+      "afterPayment": "After bank transfer:",
+      "step1": "Keep your transfer receipt",
+      "step2": "Order will be processed within 1-2 hours",
+      "step3": "You will receive email confirmation when order is approved",
+      "routingNumber": "Routing Number",
+      "referenceNote": "Your order number will be provided after checkout",
+      "exampleBank": "Example Bank",
+      "exampleStoreName": "Your Store Name"
+    },
+    "orderSummary": {
+      "title": "Order Summary",
+      "subtotal": "Subtotal",
+      "shipping": "Shipping",
+      "tax": "Tax (7%)",
+      "total": "Total",
+      "freeShipping": "Free"
+    },
+    "placeOrder": "Place Order",
+    "placeOrderWithTotal": "Place Order - {{total}}",
+    "createOrder": "Create Order",
+    "securityNotice": {
+      "title": "Secure checkout",
+      "message": "Your payment information is processed securely. We do not store credit card details."
+    },
+    "validation": {
+      "required": "This field is required",
+      "emailInvalid": "Please enter a valid email address",
+      "phoneInvalid": "Please enter a valid 10-digit phone number",
+      "zipCodeInvalid": "Please enter a valid zip code",
+      "cardNumberRequired": "Card number is required",
+      "cardNumberInvalid": "Please enter a valid 16-digit card number",
+      "cardNameRequired": "Name on card is required",
+      "cardExpiryRequired": "Expiry date is required",
+      "cardExpiryInvalid": "Please use MM/YY format",
+      "cardCvcRequired": "CVC is required",
+      "cardCvcInvalid": "Please enter a valid CVC"
+    },
+    "success": {
+      "message": "Your order has been placed successfully!"
+    }
+  },
+  "orders": {
+    "title": "My Orders",
+    "loginRequired": "Login Required",
+    "loginMessage": "Please log in to view your orders.",
+    "empty": {
+      "title": "No Orders Yet",
+      "message": "You haven't placed any orders yet. Start shopping to see your orders here.",
+      "startShopping": "Start Shopping"
+    },
+    "error": {
+      "title": "Error Loading Orders",
+      "message": "Something went wrong while loading your orders"
+    },
+    "orderNumber": "Order #{{number}}",
+    "placedOn": "Placed on {{date}}",
+    "status": {
+      "pending": "Pending",
+      "processing": "Processing",
+      "shipped": "Shipped",
+      "delivered": "Delivered",
+      "cancelled": "Cancelled"
+    },
+    "paymentStatus": {
+      "pending": "Pending",
+      "paid": "Paid",
+      "failed": "Failed",
+      "refunded": "Refunded"
+    },
+    "viewDetails": "View Details",
+    "hideDetails": "Hide Details",
+    "writeReview": "Write a Review",
+    "items": "{{count}} item",
+    "items_one": "{{count}} item",
+    "items_other": "{{count}} items",
+    "tracking": "Tracking",
+    "track": "Track",
+    "estimatedDelivery": "Est. Delivery",
+    "orderItems": "Order Items",
+    "orderSummary": "Order Summary",
+    "quantity": "Qty",
+    "price": "Price",
+    "subtotal": "Subtotal",
+    "shipping": "Shipping",
+    "tax": "Tax",
+    "discount": "Discount",
+    "total": "Total",
+    "shippingAddress": "Shipping Address",
+    "phone": "Phone",
+    "returnItems": "Return Items",
+    "downloadInvoice": "Download Invoice",
+    "cancelOrder": "Cancel",
+    "cancelling": "Cancelling...",
+    "cancelConfirm": "Are you sure you want to cancel this order?",
+    "repayOrder": "Pay Again",
+    "repaying": "Processing...",
+    "repayConfirm": "Do you want to pay for this order again?",
+    "noItemsFound": "No items found",
+    "unknownProduct": "Unknown Product",
+    "ordersTotal": "orders total",
+    "previous": "Previous",
+    "next": "Next",
+    "tryAgain": "Try Again"
+  },
+  "payment": {
+    "initializingPayment": "Initializing payment...",
+    "paymentDetails": "Payment Details",
+    "billingAddress": "Billing Address",
+    "processing": "Processing...",
+    "payNow": "Pay {{amount}}",
+    "securePayment": "Secure Payment",
+    "securityNotice": "Your payment information is encrypted and secure.",
+    "errors": {
+      "initializationFailed": "Failed to initialize payment. Please try again.",
+      "paymentFailed": "Payment failed. Please try again.",
+      "confirmationFailed": "Payment confirmation failed. Please contact support."
+    }
+  },
+  "admin": {
+    "dashboard": {
+      "title": "Admin Dashboard",
+      "lastUpdated": "Last updated",
+      "stats": {
+        "totalRevenue": "Total Revenue",
+        "totalOrders": "Total Orders",
+        "totalUsers": "Total Users",
+        "totalProducts": "Total Products",
+        "activeProducts": "Active products",
+        "fromLastMonth": "from last month"
+      },
+      "alerts": {
+        "pendingOrders": "You have {{count}} pending orders that need attention",
+        "viewOrders": "View Orders"
+      },
+      "sections": {
+        "recentOrders": "Recent Orders",
+        "topProducts": "Top Products",
+        "viewAll": "View All"
+      },
+      "table": {
+        "order": "Order",
+        "customer": "Customer",
+        "date": "Date",
+        "total": "Total",
+        "status": "Status",
+        "sold": "sold",
+        "noRecentOrders": "No recent orders",
+        "noProductData": "No product data available"
+      },
+      "orderStatus": {
+        "pending": "Pending",
+        "processing": "Processing",
+        "shipped": "Shipped",
+        "delivered": "Delivered",
+        "cancelled": "Cancelled"
+      },
+      "errors": {
+        "loadingDashboard": "Error Loading Dashboard",
+        "failedToLoad": "Failed to load dashboard data. Please try again."
+      }
+    },
+    "orders": {
+      "title": "Orders Management",
+      "subtitle": "Track and update all customer orders",
+      "searchPlaceholder": "Search orders by number, customer name, or email...",
+      "filterByStatus": "Filter by Status",
+      "allStatus": "All Status",
+      "noOrdersFound": "No orders found",
+      "actions": {
+        "view": "View",
+        "edit": "Edit",
+        "update": "Update",
+        "delete": "Delete"
+      },
+      "table": {
+        "orderNumber": "Order",
+        "customer": "Customer",
+        "date": "Date",
+        "items": "Items",
+        "total": "Total",
+        "status": "Status",
+        "payment": "Payment",
+        "actions": "Actions"
+      },
+      "status": {
+        "pending": "Pending",
+        "processing": "Processing",
+        "shipped": "Shipped",
+        "delivered": "Delivered",
+        "cancelled": "Cancelled"
+      },
+      "paymentStatus": {
+        "pending": "Pending",
+        "paid": "Paid",
+        "failed": "Failed",
+        "refunded": "Refunded"
+      },
+      "itemsCount": "{{count}} item",
+      "itemsCount_one": "{{count}} item",
+      "itemsCount_other": "{{count}} items",
+      "pagination": {
+        "showing": "Showing",
+        "to": "to",
+        "of": "of",
+        "results": "results",
+        "previous": "Previous",
+        "next": "Next"
+      },
+      "details": {
+        "title": "Order Details",
+        "orderNumber": "Order Number",
+        "orderDate": "Order Date",
+        "orderStatus": "Order Status",
+        "paymentStatus": "Payment Status",
+        "customer": {
+          "title": "Customer Information",
+          "name": "Name",
+          "email": "Email",
+          "phone": "Phone"
+        },
+        "shipping": {
+          "title": "Shipping Address",
+          "fullName": "Full Name",
+          "address": "Address",
+          "phone": "Phone"
+        },
+        "items": {
+          "title": "Order Items",
+          "quantity": "Quantity",
+          "price": "Price"
+        },
+        "summary": {
+          "title": "Order Summary",
+          "subtotal": "Subtotal",
+          "tax": "Tax",
+          "shipping": "Shipping",
+          "discount": "Discount",
+          "total": "Total"
+        }
+      },
+      "updateStatus": {
+        "title": "Update Order Status",
+        "currentStatus": "Current status",
+        "newStatus": "New Status",
+        "selectNewStatus": "Select new status",
+        "note": "Note (Optional)",
+        "notePlaceholder": "Add a note about this status change...",
+        "cancel": "Cancel",
+        "update": "Update",
+        "updating": "Updating..."
+      },
+      "messages": {
+        "updateSuccess": "Order status updated successfully",
+        "updateError": "Error updating order status",
+        "loadError": "Error loading orders. Please try again.",
+        "retry": "Retry"
+      }
+    }
+  },
+  "product": {
+    "viewDetails": "View Details",
+    "addToCart": "Add to Cart",
+    "buyNow": "Buy Now",
+    "outOfStock": "Out of Stock",
+    "inStock": "In Stock",
+    "price": "Price",
+    "originalPrice": "Original Price",
+    "discount": "Discount",
+    "rating": "Rating",
+    "reviews": "Reviews",
+    "description": "Description",
+    "specifications": "Specifications",
+    "addedToCart": "Added to cart",
+    "quantity": "Quantity",
+    "selectVariant": "Select Variant",
+    "relatedProducts": "Related Products"
+  },
+  "common": {
+    "tryAgain": "Try Again",
+    "previous": "Previous",
+    "next": "Next",
+    "loading": "Loading...",
+    "error": "Error",
+    "success": "Success"
+  }
+}

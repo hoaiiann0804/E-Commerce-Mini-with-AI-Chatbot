@@ -1,0 +1,87 @@
+/* Description Content Dark Mode Styles */
+.description-content {
+  /* Base styles */
+  line-height: 1.6;
+}
+
+.description-content h1,
+.description-content h2,
+.description-content h3,
+.description-content h4,
+.description-content h5,
+.description-content h6 {
+  @apply text-gray-900 dark:text-gray-100 font-semibold mb-4 mt-6;
+}
+
+.description-content h1 {
+  @apply text-2xl;
+}
+.description-content h2 {
+  @apply text-xl;
+}
+.description-content h3 {
+  @apply text-lg;
+}
+
+.description-content p {
+  @apply text-gray-800 dark:text-gray-200 mb-4;
+}
+
+.description-content ul,
+.description-content ol {
+  @apply text-gray-800 dark:text-gray-200 mb-4 pl-6;
+}
+
+.description-content li {
+  @apply mb-2;
+}
+
+.description-content strong,
+.description-content b {
+  @apply text-gray-900 dark:text-gray-100 font-semibold;
+}
+
+.description-content a {
+  @apply text-blue-600 dark:text-blue-400 hover:text-blue-800 dark:hover:text-blue-300 underline;
+}
+
+.description-content img {
+  @apply rounded-lg shadow-md max-w-full h-auto my-6;
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.description-content img:hover {
+  transform: scale(1.02);
+  @apply shadow-lg;
+}
+
+.description-content blockquote {
+  @apply border-l-4 border-blue-500 dark:border-blue-400 pl-4 py-2 my-4 bg-gray-50 dark:bg-gray-800 text-gray-700 dark:text-gray-300 italic;
+}
+
+.description-content code {
+  @apply bg-gray-100 dark:bg-gray-800 text-gray-800 dark:text-gray-200 px-2 py-1 rounded text-sm font-mono;
+}
+
+.description-content pre {
+  @apply bg-gray-100 dark:bg-gray-800 text-gray-800 dark:text-gray-200 p-4 rounded-lg overflow-x-auto my-4;
+}
+
+.description-content table {
+  @apply w-full border-collapse border border-gray-300 dark:border-gray-600 my-4;
+}
+
+.description-content th,
+.description-content td {
+  @apply border border-gray-300 dark:border-gray-600 px-4 py-2 text-left;
+}
+
+.description-content th {
+  @apply bg-gray-100 dark:bg-gray-800 font-semibold text-gray-900 dark:text-gray-100;
+}
+
+.description-content td {
+  @apply text-gray-800 dark:text-gray-200;
+}
